@@ -1,0 +1,26 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+bind right:ctrl;alt  push right
+bind left:ctrl;alt   push left
+bind up:ctrl;alt     push up  
+bind down:ctrl;alt   push down
+
+bind right:ctrl;alt;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;alt;cmd   push left  bar-resize:screenSizeX/2
+bind up:ctrl;alt;cmd     push up    bar-resize:screenSizeY/2
+bind down:ctrl;alt;cmd   push down  bar-resize:screenSizeY/2
+bind m:ctrl;cmd push up		bar-resize:screenSizeX
+
+bind right:cmd;ctrl    focus right
+bind left:cmd;ctrl     focus left
+bind up:cmd;ctrl       focus up
+bind down:cmd;ctrl     focus down
+bind left:cmd;alt;ctrl   focus behind
+bind right:cmd;alt;ctrl focus behind
+
+bind right:alt;ctrl;shift      resize +10% +0
+bind left:alt;ctrl;shift       resize -10% +0
+bind up:alt;ctrl;shift         resize +0   -10%
+bind down:alt;ctrl;shift       resize +0   +10%
