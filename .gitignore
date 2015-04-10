@@ -28,3 +28,6 @@ projectile-bookmarks.eld
 # osx stuff
 .DS_Store
 /tramp
+
+
+emacs.d/savefile/saveplace
