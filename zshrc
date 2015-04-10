@@ -51,6 +51,8 @@ plugins=(git osx ruby python brew brew-cask colorize golang history history-subs
 
 export PATH="/opt/local/bin:/opt/local/sbin:/Users/julian/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/julian/gocode/bin"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
