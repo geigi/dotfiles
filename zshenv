@@ -7,6 +7,7 @@ alias bupgrade='brew update && brew upgrade && brew cleanup && brew cask cleanup
 
 alias python='python3'
 alias pip='pip3'
+alias rm='rm -i'
 
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
