@@ -1,6 +1,7 @@
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
+config menuBarIconHidden true
 
 bind right:ctrl;alt  push right
 bind left:ctrl;alt   push left
