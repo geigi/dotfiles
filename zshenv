@@ -2,7 +2,7 @@ alias subl='open -a "Sublime Text"'
 alias auswiki='tiddlywiki ~/Documents/Wiki/Australien --server'
 alias techwiki='tiddlywiki ~/Documents/Wiki/Tech --server'
 
-alias bupgrade='brew update && brew upgrade && brew cleanup && brew cask cleanup'
+alias bupgrade='brew update && brew upgrade --all && brew cleanup && brew cask cleanup'
 ***REMOVED***
 
 alias python='python3'
