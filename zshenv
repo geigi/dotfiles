@@ -9,6 +9,8 @@ alias python='python3'
 alias pip='pip3'
 alias rm='rm -i'
 
+alias gupdate='go get -u all'
+
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 export NODE_PATH="/usr/local/lib/node"
