@@ -39,6 +39,8 @@ alias python='python3'
 alias pip='pip3'
 alias rm='rm -i'
 
+alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Backup"'
+
 alias gupdate='go get -u all'
 
 
