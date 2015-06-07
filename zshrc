@@ -43,6 +43,7 @@ alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Ba
 
 alias gupdate='go get -u all'
 
+alias z='fasd_cd -d'
 
 echo '    .   /\    .               .
    / | /  \  | \       ______/ \
