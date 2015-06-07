@@ -13,6 +13,16 @@ var pushLeft1_2 = slate.operation("push", {
   "direction" : "left",
   "style" : "bar-resize:screenSizeX/2"
 });
+var pushLeft1_2_top = slate.operation("corner", {
+  "direction" : "top-left",
+  "width" : "screenSizeX/2",
+  "height" : "screenSizeY/2"
+});
+var pushLeft1_2_bottom = slate.operation("corner", {
+  "direction" : "bottom-left",
+  "width" : "screenSizeX/2",
+  "height" : "screenSizeY/2"
+});
 var pushRight1_2 = slate.operation("push", {
   "direction" : "right",
   "style" : "bar-resize:screenSizeX/2"
@@ -41,7 +51,11 @@ var devLayout = slate.layout("devLayout", {
 
 var messageLayout = slate.layout("messageLayout", {
   "Nachrichten" : {
-    "operations" : [pushLeft1_2],
+    "operations" : [pushLeft1_2_bottom],
+    "repeat" : true
+  },
+  "Telegram" : {
+    "operations" : [pushLeft1_2_top],
     "repeat" : true
   },
   "Skype" : {
@@ -73,7 +87,8 @@ var runIfMap  = {
     "iTerm": "/opt/homebrew-cask/Caskroom/iterm2/2.0/iTerm.app",
     "Sublime Text": "/Applications/Sublime Text.app",
     "Mail": "/Applications/Mail.app",
-    "Twitter": "/Applications/Twitter.app"
+    "Twitter": "/Applications/Twitter.app",
+    "Telegram": "/Applications/Telegram.app"
 };
 
 function runIf(name) {
@@ -98,6 +113,7 @@ function setDev() {
 function setMessage() {
   runIf("Nachrichten");
   runIf("Skype");
+  runIf("Telegram");
   var op = slate.operation("layout", { "name" : messageLayout });
   op.run();
 }
