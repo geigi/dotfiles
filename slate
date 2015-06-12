@@ -16,8 +16,6 @@ bind m:ctrl;cmd push up		bar-resize:screenSizeX
 
 bind right:cmd;ctrl    focus right
 bind left:cmd;ctrl     focus left
-bind up:cmd;ctrl       focus up
-bind down:cmd;ctrl     focus down
 bind left:cmd;alt;ctrl   focus behind
 bind right:cmd;alt;ctrl focus behind
 

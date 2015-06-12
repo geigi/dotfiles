@@ -45,6 +45,8 @@ alias gupdate='go get -u all'
 
 alias z='fasd_cd -d'
 
+alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
+
 echo '    .   /\    .               .
    / | /  \  | \       ______/ \
   /  |/_  _\ |_ \     / _____\_ \------\.
