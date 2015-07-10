@@ -4,10 +4,17 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias ll='ls -lG'
 alias subl='open -a "Sublime Text"'
+
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
 export NODE_PATH="/usr/local/lib/node"
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+export HISTCONTROL=ignoredups
+export PATH="/opt/local/bin:/opt/local/sbin:/Users/julian/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/julian/gocode/bin"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ##
 # Your previous /Users/julian/.bash_profile file was backed up as /Users/julian/.bash_profile.macports-saved_2014-04-27_at_16:45:04

@@ -45,7 +45,7 @@ alias gupdate='go get -u all'
 
 alias z='fasd_cd -d'
 
-alias meld='/Applications/Meld.app/Contents/MacOS/Meld'
+alias prezto_update='git pull && git submodule update --init --recursive'
 
 echo '    .   /\    .               .
    / | /  \  | \       ______/ \
