@@ -35,7 +35,9 @@ alias techwiki='tiddlywiki ~/Documents/Wiki/Tech --server'
 alias bubu='brew update && brew upgrade --all && brew cleanup && brew cask cleanup'
 ***REMOVED***
 
+alias python2='python'
 alias python='python3'
+alias pip2='pip'
 alias pip='pip3'
 alias rm='rm -i'
 
@@ -47,29 +49,4 @@ alias z='fasd_cd -d'
 
 alias prezto_update='git pull && git submodule update --init --recursive'
 
-echo '    .   /\    .               .
-   / | /  \  | \       ______/ \
-  /  |/_  _\ |_ \     / _____\_ \------\.
-  | |   | |   | |    |   .------\  \     \.
- | |    | |    | |   \  / \    .-.\ \      \
- | |    | |    | |    \/^\   _|_  |\ \    __\_--.
- \  \___| |___/  /  _ / _|  /   \ | |    |      /
-   \_____   ____/-_/  \(0) |   . || |    \    /
-         | |     \.\--/  \_\  (0)/ /      -- /
-         | |       \.      \----/ |       ./
-         | |         \.___.____ \ |  .___/
-         | |          |     /__/--|  \
-        ( )/ \      _.\ ___/ /\.  |   \
-        ( )|/  \.../ ./    |    \.\____\
-         ( )|       /      |\     \.
-          | |\     /       | \.     \
-          | | \.__/         \  \\   /
-          | |     |         |   \._/
-          | |     \         |    \
-          | |    ./\        /     |
-          | |   /   \.    ./      / _.-----...
-          | |  _\     \_./       /\/__      ./
-          | | / / \ _____\____  \\_________/
-          |_|/_/_/_/    / /  /  /
-                        -/__/__/'
 echo "Kickin' ass with Darwin."
