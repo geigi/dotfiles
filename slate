@@ -20,3 +20,5 @@ bind up:alt;ctrl;shift         resize +0   -10%
 bind down:alt;ctrl;shift       resize +0   +10%
 
 bind space:alt grid padding:5 0:6,2 1:6,2
+
+bind h:ctrl hint
