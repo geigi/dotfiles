@@ -38,6 +38,11 @@ var fullscreen = slate.operation("move", {
   "height" : "screenSizeY"
 });
 
+var throwNext = slate.operation("throw", {
+  "screen": "next"
+});
+
+// Layouts
 var devLayout = slate.layout("devLayout", {
   "iTerm" : {
     "operations" : [pushLeft1_3],
@@ -75,11 +80,18 @@ var communicationLayout = slate.layout("communicationLayout", {
   }
 });
 
+
 slate.bind("1:cmd;ctrl", function() { setDev(); });
 slate.bind("2:cmd;ctrl", function() { setMessage(); });
 slate.bind("3:cmd;ctrl", function() { setCommunication(); });
+slate.bind("space:ctrl,alt", function(win) {
+  if (!win) {
+    return;
+  }
 
-slate.default(["1440*900"], devLayout);
+  throwNext(win);
+});
+
 
 var runIfMap  = {
     "Nachrichten": "/Applications/Messages.app",
@@ -124,3 +136,24 @@ function setCommunication() {
   var op = slate.operation("layout", { "name" : communicationLayout });
   op.run();
 }
+
+var throwNext = function(win) {
+  if (!win) {
+    return;
+  }
+  var winRect = win.rect();
+  var screen = win.screen().visibleRect();
+
+  var newX = (winRect.x - screen.x)/screen.width+"*screenSizeX+screenOriginX";
+  var newY = (winRect.y - screen.y)/screen.height+"*screenSizeY+screenOriginY";
+  var newWidth = winRect.width/screen.width+"*screenSizeX";
+  var newHeight = winRect.height/screen.height+"*screenSizeY";
+  var throwNext = slate.operation("throw", {
+    "x": newX,
+    "y": newY,
+    "width": newWidth,
+    "height": newHeight,
+    "screen": "next"
+  });
+  win.doOperation(throwNext);
+};
