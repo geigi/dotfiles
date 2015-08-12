@@ -40,8 +40,6 @@ alias bubu='brew update && brew upgrade --all && brew cleanup && brew cask clean
 alias gupdate='go get -u all'
 alias prezto_update='cd ~/.zprezto && git pull && git submodule update --init --recursive'
 
-***REMOVED***
-
 alias python2='python'
 alias python='python3'
 alias pip2='pip'
