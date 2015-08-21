@@ -47,5 +47,6 @@ alias pip='pip3'
 
 alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Backup"'
 
-
+#ZSH settings
+setopt menu_complete
 echo "Kickin' ass with Darwin."
