@@ -4,7 +4,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # PATHS
-export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/usr/texbin:/Users/julian/bin"
+export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/usr/texbin:/Users/ju/bin"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
@@ -45,7 +45,7 @@ alias python='python3'
 alias pip2='pip'
 alias pip='pip3'
 
-alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Backup"'
+alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Backup" && rsync -a -P --stats "/Volumes/Storage 2/Video" "/Volumes/Storage 1/Backup"'
 
 #ZSH settings
 setopt menu_complete
