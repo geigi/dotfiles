@@ -36,6 +36,7 @@ alias prezto_update='cd ~/.zprezto && git pull && git submodule update --init --
 
 #OS X specific
 alias subl='open -a "Sublime Text"'
+alias slp='pmset sleepnow'
 
 alias auswiki='tiddlywiki ~/Documents/Wiki/Australien --server'
 alias techwiki='tiddlywiki ~/Documents/Wiki/Tech --server'
@@ -47,7 +48,7 @@ alias python='python3'
 alias pip2='pip'
 alias pip='pip3'
 
-alias caff='caffeinate'
+alias caff='caffeinate -d'
 alias nosleep='pmset noidle'
 
 alias exb='rsync -a -P --stats "/Volumes/Storage 2/Fotos" "/Volumes/Storage 1/Backup" && rsync -a -P --stats "/Volumes/Storage 2/Video" "/Volumes/Storage 1/Backup"'
